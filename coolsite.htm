@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Basic Website</title>
+    <title>My Basic Website with Animations</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,12 +16,34 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            animation: fadeInDown 1s ease-out;
+        }
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         nav {
             background-color: #444;
             color: #fff;
             padding: 10px;
             text-align: center;
+            animation: slideInDown 1s ease-out;
+        }
+        @keyframes slideInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         nav a {
             color: #fff;
@@ -35,12 +57,32 @@
             padding: 20px;
             margin: 20px;
             background-color: #fff;
+            animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
         footer {
             background-color: #333;
             color: #fff;
             padding: 20px;
             text-align: center;
+            animation: fadeInUp 1s ease-out;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
